@@ -89,7 +89,10 @@ sub run {
 # Called when no previous releases found. Return the initial commit in
 # brackets to be parsed by finish_list().
 sub initial_commit {
-    my $sha = qx(git rev-list --max-parents=0 HEAD);
+    if (qx(git rev-parse --is-shallow-repository) =~ /^true/) {
+        system(qw(git fetch --unshallow)) == 0 or die '`git fetch` failed`';
+    }
+    my $sha = qx(git rev-list --remotes --max-parents=0 HEAD);
     return "["  . substr($sha, 0, 7) . "]";
 }
 
