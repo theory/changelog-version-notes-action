@@ -22,7 +22,7 @@ jobs:
       uses: actions/checkout@v4
     - name: Generate Release Changes
       id: notes
-      uses: theory/changelog-version-notes-action@main
+      uses: theory/changelog-version-notes-action@v0
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v2
       env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
