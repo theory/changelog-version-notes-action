@@ -19,6 +19,5 @@ jobs:
       uses: softprops/action-gh-release@v2
       env: { GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
       with:
-        # name: "Relelase ${{ env.VERSION }}"
-        # files: "pgxn_meta-*"
+        name: Release ${{ github.ref_name }}
         body_path: '${{ steps.notes.outputs.file }}'

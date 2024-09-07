@@ -64,7 +64,7 @@ sub run {
 			# Found the header for this version. Build a regex for its link
 			# reference.
 			$found = 1;
-            my $link_regex = qr/^\s*\Q[$self->{version}]\E:\s+https:/;
+            my $link_regex = qr/^\s*\Q[$self->{version}]\E:\s+https?:/;
 
 			# Continue scanning until we reach the next `## ` header.
             while (my $line = <$fh>) {
