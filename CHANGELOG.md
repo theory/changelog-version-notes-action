@@ -7,6 +7,16 @@ All notable changes to this project will be documented in this file. It uses the
   [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
     "Semantic Versioning 2.0.0"
 
+## [v0.1.1] — 2024-09-07
+
+### ⚡ Improvements
+
+*   Fixed fetching the earliest commit SHA for the "changes since" line
+    appended to the output when working with a shallow clone — as in GitHub's
+    action/checkout repositories.
+
+  [v0.1.1]: https://github.com/tembo-io/pg-jsonschema-boon/compare/v0.1.0...v0.1.1
+
 ## [v0.1.0] — 2024-09-07
 
 The theme of this release is *Scratching my own itch.*
