@@ -1,5 +1,8 @@
 name: Extract Changelog Release Notes
 author: "David E. Wheeler <david@justatheory.com>"
+branding:
+  icon: align-left
+  color: gray-dark
 description: |
   Extract entries for a single version from a CHANGELOG file to use in a GitHub release.
 inputs:
