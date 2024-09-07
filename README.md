@@ -143,5 +143,7 @@ The script has a few additional behavior it may be useful to be aware of:
   [mit]: https://opensource.org/license/MIT "⚖️ MIT License"
   [🧪 Test]: https://github.com/theory/changelog-version-notes-action/actions/workflows/test.yml/badge.svg
     "🧪 Test Status"
+  [ci]: https://github.com/theory/changelog-version-notes-action/actions/workflows/test.yml
+    "🧪 Test Status"
   [🎬 Action]: https://img.shields.io/badge/Marketplace-Action-orange.svg "[🎬 Marketplace Action]"
   [action]: https://github.com/marketplace/actions/extract-changelog-release-notes "[🎬 Marketplace Action]"
