@@ -1,5 +1,7 @@
 # GitHub Action to Extract Release Notes from a Changelog
 
+[![⚖️ MIT]][mit] [![🎬 Action]][action] [![🧪 Test]][ci]
+
 This action extracts change notes for a single version from a [Keep a
 Changelog] file. This can be useful for creating release notes for a GitHub
 release. Here's an example from this project's own [release
@@ -20,7 +22,7 @@ jobs:
     steps:
     - name: Check out the repo
       uses: actions/checkout@v4
-    - name: Generate Release Changes
+    - name: Generate Release Notes
       id: notes
       uses: theory/changelog-version-notes-action@v0
     - name: Create GitHub Release
@@ -137,3 +139,9 @@ The script has a few additional behavior it may be useful to be aware of:
     repository.
 
   [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
+  [⚖️ MIT]: https://img.shields.io/badge/License-MIT-blue.svg "⚖️ MIT License"
+  [mit]: https://opensource.org/license/MIT "⚖️ MIT License"
+  [🧪 Test]: https://github.com/theory/changelog-version-notes-action/actions/workflows/test.yml/badge.svg
+    "🧪 Test Status"
+  [🎬 Action]: https://img.shields.io/badge/Marketplace-Action-orange.svg "[🎬 Marketplace Action]"
+  [action]: https://github.com/marketplace/actions/extract-changelog-release-notes "[🎬 Marketplace Action]"
