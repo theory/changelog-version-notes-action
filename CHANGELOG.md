@@ -25,6 +25,6 @@ The theme of this release is *Scratching my own itch.*
 
 *   Wrote a [README]
 
-  [v0.1.0]: https://github.com/tembo-io/pg-jsonschema-boon/compare/xxxxxxx...v0.1.0
+  [v0.1.0]: https://github.com/tembo-io/pg-jsonschema-boon/compare/cd28465...v0.1.0
   [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
   [README]: README.md
