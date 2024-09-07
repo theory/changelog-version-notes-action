@@ -56,7 +56,7 @@ sub run {
         binmode $out, ':encoding(UTF-8)';
     }
 
-	my $header = "## [v$self->{version}]";
+	my $header = "## [$self->{version}]";
 	my ($found, $in_item) = (0, 0);
 
     while (my $line = <$fh>) {
@@ -64,7 +64,7 @@ sub run {
 			# Found the header for this version. Build a regex for its link
 			# reference.
 			$found = 1;
-            my $link_regex = qr/^\s*\Q[v$self->{version}]\E:\s+https:/;
+            my $link_regex = qr/^\s*\Q[$self->{version}]\E:\s+https:/;
 
 			# Continue scanning until we reach the next `## ` header.
             while (my $line = <$fh>) {
@@ -103,7 +103,7 @@ sub finish_list {
 
 	# Emit a footer line with a link to the diff for this version.
     print {$out} sprintf(
-		"---\n\n🆚 For more detail compare [changes since %s](%s/compare/%s...v%s).\n",
+		"---\n\n🆚 For more detail compare [changes since %s](%s/compare/%s...%s).\n",
 		$prev, $self->{repo}, $prev, $self->{version},
 	);
 
