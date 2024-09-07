@@ -1,0 +1,27 @@
+name: Extract Changelog Release Notes
+author: "David E. Wheeler <david@justatheory.com>"
+description: |
+  Extract entries for a single version from a CHANGELOG file to use in a GitHub release.
+inputs:
+  version:
+    description: Release version to extract
+    required: false
+    default: ${{ github.ref_name }}
+  changelog:
+    description: Location of the changelog file
+    required: false
+    default: CHANGELOG.md
+  into-file:
+    description: File to which to write the version notes
+    required: false
+    default: release-notes.md
+outputs:
+  file:
+    description: File to which the release notes were written
+    value: ${{ inputs.into-file }}
+runs:
+  using: "composite"
+  steps:
+    - name: Extract Notes
+      run: perl mknotes -v '${{ inputs.version }}' -f '${{ inputs.changelog }}' -r 'https://github.com/${{ github.repository }}' -o '${{ inputs.into-file }}'
+      shell: bash
