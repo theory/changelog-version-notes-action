@@ -25,6 +25,9 @@ outputs:
 runs:
   using: "composite"
   steps:
+    - name: Set GitHub Path
+      run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+      shell: bash
     - name: Extract Notes
-      run: perl mknotes -v '${{ inputs.version }}' -f '${{ inputs.changelog }}' -r 'https://github.com/${{ github.repository }}' -o '${{ inputs.into-file }}'
+      run: mknotes -v '${{ inputs.version }}' -f '${{ inputs.changelog }}' -r 'https://github.com/${{ github.repository }}' -o '${{ inputs.into-file }}'
       shell: bash

@@ -7,6 +7,15 @@ All notable changes to this project will be documented in this file. It uses the
   [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
     "Semantic Versioning 2.0.0"
 
+## [v0.1.2] — 2024-09-09
+
+### 🪲 Bug Fixes
+
+*   Fixed the path so that the action properly finds the script that extracts
+    the release notes.
+
+  [v0.1.2]: https://github.com/tembo-io/pg-jsonschema-boon/compare/v0.1.1...v0.1.2
+
 ## [v0.1.1] — 2024-09-07
 
 ### ⚡ Improvements
