@@ -7,6 +7,19 @@ All notable changes to this project will be documented in this file. It uses the
   [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
     "Semantic Versioning 2.0.0"
 
+## [v0.1.3] — 2024-10-03
+
+### 🪲 Bug Fixes
+
+*   Switched to a full path to execute the script, as adding the action path
+    to `$GITHUB_PATH` in v0.1.2 was not working.
+
+### 📔 Notes
+
+*   Updated the test workflow to always test the current branch.
+
+  [v0.1.3]: https://github.com/theory/changelog-version-notes-action/compare/v0.1.2...v0.1.3
+
 ## [v0.1.2] — 2024-09-09
 
 ### 🪲 Bug Fixes

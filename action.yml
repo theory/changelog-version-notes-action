@@ -23,11 +23,8 @@ outputs:
     description: File to which the release notes were written
     value: ${{ inputs.into-file }}
 runs:
-  using: "composite"
+  using: composite
   steps:
-    - name: Set GitHub Path
-      run: echo "${{ github.action_path }}" >> $GITHUB_PATH
-      shell: bash
     - name: Extract Notes
-      run: mknotes -v '${{ inputs.version }}' -f '${{ inputs.changelog }}' -r 'https://github.com/${{ github.repository }}' -o '${{ inputs.into-file }}'
+      run: $GITHUB_ACTION_PATH/mknotes -v '${{ inputs.version }}' -f '${{ inputs.changelog }}' -r 'https://github.com/${{ github.repository }}' -o '${{ inputs.into-file }}'
       shell: bash
