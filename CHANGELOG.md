@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file. It uses the
 *   Fixed the path so that the action properly finds the script that extracts
     the release notes.
 
-  [v0.1.2]: https://github.com/tembo-io/pg-jsonschema-boon/compare/v0.1.1...v0.1.2
+  [v0.1.2]: https://github.com/theory/changelog-version-notes-action/compare/v0.1.1...v0.1.2
 
 ## [v0.1.1] — 2024-09-07
 
@@ -24,7 +24,7 @@ All notable changes to this project will be documented in this file. It uses the
     appended to the output when working with a shallow clone — as in GitHub's
     action/checkout repositories.
 
-  [v0.1.1]: https://github.com/tembo-io/pg-jsonschema-boon/compare/v0.1.0...v0.1.1
+  [v0.1.1]: https://github.com/theory/changelog-version-notes-action/compare/v0.1.0...v0.1.1
 
 ## [v0.1.0] — 2024-09-07
 
@@ -44,6 +44,6 @@ The theme of this release is *Scratching my own itch.*
 
 *   Wrote a [README]
 
-  [v0.1.0]: https://github.com/tembo-io/pg-jsonschema-boon/compare/cd28465...v0.1.0
+  [v0.1.0]: https://github.com/theory/changelog-version-notes-action/compare/cd28465...v0.1.0
   [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
   [README]: README.md
