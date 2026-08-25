@@ -10,11 +10,11 @@ jobs:
     runs-on: ${{ matrix.os[1] }}-latest
     steps:
     - name: Check out the repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     - name: Generate Release Notes
       id: notes
       uses: ./
-      with: { version: v0.1.0 }
+      with: { version: v0.1.4 }
     - name: Show Result
       shell: bash
       run: cat '${{ steps.notes.outputs.file }}'

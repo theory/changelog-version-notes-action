@@ -7,6 +7,26 @@ All notable changes to this project will be documented in this file. It uses the
   [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
     "Semantic Versioning 2.0.0"
 
+## [v0.1.4] — 2026-08-25
+
+### 🪲 Bug Fixes
+
+*   Updated the reformatting to support nested lists, not just lists that
+    start at the beginning of each line. Like this:
+    *   Changed regex
+    *   Updated changes
+    *   Updated the integration test workflow, `.github/workflows/test.yml`,
+        to emit this most recent change list, so you can see the wrapping in
+        action.
+
+### 📚 Documentation
+
+*   Updated the versions of the actions used in the [README]'s example
+    workflows (and also in the project's own workflows)
+
+  [v0.1.4]: https://github.com/theory/changelog-version-notes-action/compare/v0.1.3...v0.1.4
+  [README]: README.md
+
 ## [v0.1.3] — 2024-10-03
 
 ### 🪲 Bug Fixes

@@ -10,7 +10,7 @@ use File::Path qw(make_path);
 use File::Basename qw(dirname);
 use utf8;
 
-my $item_regex = qr/^[*-+]\s+/;
+my $item_regex = qr/^\s*[*-+]\s+/;
 my $indent_regex = qr/^\s+/;
 
 sub new {
