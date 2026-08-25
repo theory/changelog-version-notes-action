@@ -17,7 +17,7 @@ All notable changes to this project will be documented in this file. It uses the
     *   Updated changes
     *   Updated the integration test workflow, `.github/workflows/test.yml`,
         to emit this most recent change list, so you can see the wrapping in
-        action.
+        action
 
 ### 📚 Documentation
 
